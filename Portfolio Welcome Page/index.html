@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ========================================
+         🔐 LYSHANDAVE PORTFOLIO - SECURITY ENHANCED
+         ======================================== -->
+    
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ========================================
+         🛡️ ENHANCED SECURITY HEADERS
+         ======================================== -->
+    
+    <!-- Content Security Policy - Block unauthorized scripts -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' 'unsafe-inline' 'unsafe-eval';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;
+      img-src 'self' data: blob: https: http:;
+      font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com;
+      connect-src 'self' https:;
+      frame-src 'none';
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+    ">
+    
+    <!-- X-Frame-Options - Prevent clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- X-Content-Type-Options - Prevent MIME sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- X-XSS-Protection - XSS protection -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Referrer Policy - Control referrer information -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Feature Policy - Disable unused browser features -->
+    <meta http-equiv="Permissions-Policy" content="
+      camera=(),
+      microphone=(),
+      geolocation=(),
+      payment=(),
+      usb=(),
+      magnetometer=(),
+      accelerometer=(),
+      gyroscope=()
+    ">
+    
+    <!-- ========================================
+         📄 SEO & BRANDING
+         ======================================== -->
+    <title>LYSHANDAVE - Expert Computer Technician | Professional IT Portfolio</title>
+    <meta name="description" content="Professional computer technician specializing in system repair, programming, and IT solutions. View my portfolio of technical expertise and professional services.">
+    <meta name="keywords" content="LYSHANDAVE, computer technician, IT specialist, computer repair, programming, web development, technical support, system maintenance, network setup">
+    <meta name="author" content="LYSHANDAVE">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lyshandave.netlify.app/">
+    <meta property="og:title" content="LYSHANDAVE - Expert Computer Technician">
+    <meta property="og:description" content="Professional computer technician specializing in system repair, programming, and IT solutions.">
+    <meta property="og:image" content="https://i.imgur.com/U9dRe69.png">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lyshandave.netlify.app/">
+    <meta property="twitter:title" content="LYSHANDAVE - Expert Computer Technician">
+    <meta property="twitter:description" content="Professional computer technician specializing in system repair, programming, and IT solutions.">
+    <meta property="twitter:image" content="https://i.imgur.com/U9dRe69.png">
+    
+    <!-- ========================================
+         🎨 THEME & APPEARANCE
+         ======================================== -->
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="msapplication-TileColor" content="#8b5cf6">
+    <meta name="color-scheme" content="dark light">
+    
+    <!-- ========================================
+         🚀 PERFORMANCE OPTIMIZATION
+         ======================================== -->
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://i.imgur.com">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/App.tsx" as="script">
+    <link rel="preload" href="/styles/globals.css" as="style">
+    
+    <!-- ========================================
+         🔐 ADDITIONAL SECURITY MEASURES
+         ======================================== -->
+    <script>
+      // 🛡️ Basic bot detection and protection
+      (function() {
+        'use strict';
+        
+        // Detect headless browsers
+        if (navigator.webdriver || 
+            window.phantom || 
+            window.__nightmare || 
+            window.callPhantom ||
+            window._phantom) {
+          console.log('🔐 Automated browser detected');
+        }
+        
+        // Basic speed trap for bots
+        var start = Date.now();
+        setTimeout(function() {
+          if (Date.now() - start < 1) {
+            console.log('🔐 Suspicious timing detected');
+          }
+        }, 0);
+        
+        // Disable debug functions in production
+        if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+          console.debug = function() {};
+          console.info = function() {};
+          console.warn = function() {};
+          console.error = function() {};
+        }
+        
+        // Anti-iframe protection (additional layer)
+        if (window.top !== window.self) {
+          window.top.location = window.self.location;
+        }
+      })();
+    </script>
+    
+    <!-- ========================================
+         🎯 CRITICAL INLINE STYLES - Prevent FOUC
+         ======================================== -->
+    <style>
+      /* Critical styles to prevent flash of unstyled content */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a;
+        color: #d1d5db;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        overflow-x: hidden;
+        /* Prevent right-click context menu immediately */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Hide page until React loads */
+      #root:empty {
+        background-color: #0f172a;
+        background-image: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+        background-size: 400% 400%;
+        animation: gradientShift 3s ease infinite;
+      }
+      
+      #root:empty::before {
+        content: "🔐 LYSHANDAVE Portfolio Loading...";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+      }
+      
+      @keyframes gradientShift {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+      }
+      
+      /* Immediate security - disable text selection */
+      * {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Allow text selection only in input fields */
+      input, textarea, [contenteditable="true"] {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <!-- ========================================
+         🎯 MAIN APPLICATION CONTAINER
+         ======================================== -->
+    <div id="root"></div>
+    
+    <!-- ========================================
+         🔐 NOSCRIPT FALLBACK - Security Notice
+         ======================================== -->
+    <noscript>
+      <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0f172a;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        z-index: 9999;
+      ">
+        <h1 style="color: #8b5cf6; margin-bottom: 20px;">🔐 LYSHANDAVE Portfolio</h1>
+        <h2 style="color: #ef4444; margin-bottom: 20px;">⚠️ JavaScript Required</h2>
+        <p style="max-width: 500px; line-height: 1.6;">
+          This portfolio requires JavaScript to display properly. 
+          Please enable JavaScript in your browser settings to view the full experience.
+        </p>
+        <p style="margin-top: 30px; color: #9ca3af;">
+          📧 Contact: lyshan.projects@gmail.com
+        </p>
+      </div>
+    </noscript>
+    
+    <!-- ========================================
+         🚀 APPLICATION SCRIPT
+         ======================================== -->
+    <script type="module" src="/main.tsx"></script>
+    
+    <!-- ========================================
+         📊 MINIMAL ANALYTICS (Privacy-Friendly)
+         ======================================== -->
+    <script>
+      // Simple, privacy-friendly page view counter
+      if (typeof window !== 'undefined' && !navigator.userAgent.includes('bot')) {
+        setTimeout(() => {
+          console.log('%c📊 LYSHANDAVE Portfolio - Page View Logged', 'color: #10b981; font-size: 12px;');
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

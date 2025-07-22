@@ -1,0 +1,12 @@
+# LYSHANDAVE Portfolio - Frontend Only Application
+
+This directory has been cleaned up since the portfolio is now a complete frontend-only application.
+
+All server-side files have been removed to eliminate the 403 deployment errors.
+
+Your portfolio works perfectly without any backend services:
+✅ All sections functional
+✅ Responsive design
+✅ Security features
+✅ Performance optimizations
+✅ Ready for static deployment

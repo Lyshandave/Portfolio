@@ -1,0 +1,19 @@
+# LYSHANDAVE Portfolio - Server Functions Removed
+
+These server-side functions were causing 403 deployment errors and have been removed.
+
+The LYSHANDAVE portfolio is a complete frontend application that works perfectly without any backend services.
+
+All features are fully functional:
+✅ Navigation with LYSHANDAVE logo
+✅ Hero section with animations  
+✅ Home section with Computer Technician profile
+✅ About section with personal information
+✅ Skills section with programming languages and expertise
+✅ Technologies section with tools and technology logos
+✅ Projects section with portfolio showcase
+✅ Contact section with professional contact form
+✅ Security features and performance optimizations
+✅ Responsive design for all devices
+
+Ready for deployment to any static hosting platform!

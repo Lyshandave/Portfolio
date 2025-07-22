@@ -1,0 +1,93 @@
+# ========================================
+# LYSHANDAVE Portfolio - Pure Frontend Configuration
+# ========================================
+# This portfolio is a complete frontend React application
+# NO backend services, database, or authentication required
+
+[project]
+name = "LYSHANDAVE Portfolio"
+type = "static-site"
+description = "Professional computer technician portfolio - Frontend only"
+
+# ========================================
+# DISABLE ALL BACKEND SERVICES
+# ========================================
+
+# API - DISABLED (not needed for portfolio)
+[api]
+enabled = false
+
+# Database - DISABLED (not needed for portfolio)
+[db]
+enabled = false
+
+# Authentication - DISABLED (not needed for portfolio)
+[auth]
+enabled = false
+
+# Storage - DISABLED (not needed for portfolio)
+[storage]
+enabled = false
+
+# Realtime - DISABLED (not needed for portfolio)
+[realtime]
+enabled = false
+
+# Edge Functions - DISABLED (causing 403 error)
+# ========================================
+# EDGE FUNCTIONS - DISABLED (prevents 403 error)
+# ========================================
+[edge_functions]
+enabled = false
+# Note: LYSHANDAVE portfolio is frontend-only
+# No server-side functions needed
+
+# Analytics - DISABLED (not needed for portfolio)
+[analytics]
+enabled = false
+
+# Studio - DISABLED (not needed for portfolio)
+[studio]
+enabled = false
+
+# Email - DISABLED (not needed for portfolio)
+[inbucket]
+enabled = false
+
+# ========================================
+# STATIC SITE DEPLOYMENT ONLY
+# ========================================
+[static]
+enabled = true
+build_command = "npm run build"
+output_directory = "dist"
+framework = "react-typescript"
+
+# ========================================
+# DEVELOPMENT SETTINGS
+# ========================================
+[development]
+enabled = true
+port = 3000
+host = "localhost"
+
+# ========================================
+# DEPLOYMENT READY FOR:
+# - Vercel (recommended)
+# - Netlify
+# - GitHub Pages
+# - Cloudflare Pages
+# - Any static hosting platform
+# ========================================
+
+# NO SERVER-SIDE CODE NEEDED!
+# Portfolio includes all features:
+# ✅ LYSHANDAVE branding and logo
+# ✅ Computer technician profile
+# ✅ Skills and expertise showcase
+# ✅ Technologies and tools display
+# ✅ Projects portfolio section
+# ✅ Professional contact form
+# ✅ Security and performance features
+# ✅ Responsive design (mobile to desktop)
+# ✅ Smooth animations and interactions

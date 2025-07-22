@@ -1,0 +1,7 @@
+# LYSHANDAVE Portfolio - Utility Files Removed
+
+All Supabase connection utilities have been removed since this is now a frontend-only portfolio.
+
+No server connections or backend utilities are needed.
+
+Your portfolio is complete and ready for deployment!
